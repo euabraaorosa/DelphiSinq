@@ -1,0 +1,108 @@
+unit Unit4;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.StdCtrls, Vcl.Grids,
+  Vcl.DBGrids, Vcl.ExtCtrls;
+
+type
+  TformRelatorio = class(TForm)
+    Panel1: TPanel;
+    Panel2: TPanel;
+    GroupBoxEstado: TGroupBox;
+    GroupBoxCodigoCliente: TGroupBox;
+    GroupBoxCodigoCidade: TGroupBox;
+    teditcodClienteInicial: TEdit;
+    teditcodClienteFinal: TEdit;
+    teditcodCidadeInicial: TEdit;
+    teditcodCidadefinal: TEdit;
+    teditEstadofinal: TEdit;
+    teditEstadoInical: TEdit;
+    DBGrid1: TDBGrid;
+    btnPesquisar: TButton;
+    procedure DesabilitarGroupBox(Sender: TObject);
+    procedure GroupBoxCodigoClienteClick(Sender: TObject);
+    procedure GroupBoxCodigoCidadeClick(Sender: TObject);
+    procedure GroupBoxEstadoClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  formRelatorio: TformRelatorio;
+
+implementation
+
+{$R *.dfm}
+
+uses Sinqia, Unit1, Unit2;
+
+procedure TformRelatorio.DesabilitarGroupBox;
+begin
+  GroupBoxCodigoCliente.Enabled := False;
+  GroupBoxCodigoCidade.Enabled := False;
+  GroupBoxEstado.Enabled := False;
+
+  // Desabilitar controles dentro de cada GroupBox
+  teditcodClienteInicial.Enabled := False;
+  teditcodClienteFinal.Enabled := False;
+  teditcodCidadeInicial.Enabled := False;
+  teditcodCidadeFinal.Enabled := False;
+  teditEstadoInical.Enabled := False;
+  teditEstadoFinal.Enabled := False;
+end;
+
+procedure TformRelatorio.GroupBoxCodigoCidadeClick(Sender: TObject);
+begin
+    GroupBoxCodigoCliente.Enabled := True;
+    GroupBoxEstado.Enabled := True;
+    teditcodCidadeInicial.Enabled  := True;
+    teditcodCidadeFinal.Enabled  := True;
+
+    // Desabilitar os outros GroupBox e seus controles
+    GroupBoxCodigoCliente.Enabled := False;
+    GroupBoxEstado.Enabled := False;
+    teditcodClienteInicial.Enabled  := False;
+    teditcodClienteFinal.Enabled  := False;
+    teditEstadoInical.Enabled  := False;
+    teditEstadoFinal.Enabled  := False;
+
+end;
+
+procedure TformRelatorio.GroupBoxCodigoClienteClick(Sender: TObject);
+begin
+    GroupBoxCodigoCidade.Enabled := True;
+    GroupBoxEstado.Enabled := True;
+    teditcodClienteInicial.Enabled  := True;
+    teditcodClienteFinal.Enabled  := True;
+
+    // Desabilitar os outros GroupBox e seus controles
+    GroupBoxCodigoCidade.Enabled := False;
+    GroupBoxEstado.Enabled := False;
+    teditcodCidadeInicial.Enabled  := False;
+    teditcodCidadeFinal.Enabled  := False;
+    teditEstadoInical.Enabled  := False;
+    teditEstadoFinal.Enabled  := False;
+end;
+
+procedure TformRelatorio.GroupBoxEstadoClick(Sender: TObject);
+begin
+    GroupBoxCodigoCliente.Enabled := True;
+    GroupBoxCodigoCidade.Enabled := True;
+    teditEstadoInical.Enabled  := True;
+    teditEstadoFinal.Enabled  := True;
+
+    // Desabilitar os outros GroupBox e seus controles
+    GroupBoxCodigoCliente.Enabled := False;
+    GroupBoxCodigoCidade.Enabled := False;
+    teditcodClienteInicial.Enabled  := False;
+    teditcodClienteFinal.Enabled  := False;
+    teditcodCidadeInicial.Enabled  := False;
+    teditcodCidadeFinal.Enabled  := False;
+end;
+
+end.

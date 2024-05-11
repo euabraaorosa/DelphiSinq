@@ -1,0 +1,50 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Grids, Vcl.DBGrids,
+  Vcl.DBCtrls, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Mask, Vcl.Menus;
+
+type
+  TForm1 = class(TForm)
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    Panel4: TPanel;
+    DBNavigator1: TDBNavigator;
+    DBGrid1: TDBGrid;
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    Label2: TLabel;
+    DBEdit2: TDBEdit;
+    Label4: TLabel;
+    DBEdit4: TDBEdit;
+    Label3: TLabel;
+    DBEdit3: TDBEdit;
+    Label5: TLabel;
+    DBEdit5: TDBEdit;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit2, Unit3;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+    Form3.Show;
+end;
+
+end.

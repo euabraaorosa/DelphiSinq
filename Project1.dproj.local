@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/05/09 21:26:21.000.720,=C:\Users\Abraão Rosa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/05/09 21:34:19.000.013,=C:\Users\Abraão Rosa\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2024/05/10 00:29:11.000.358,=C:\Users\Abraão Rosa\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2024/05/10 01:34:15.000.448,A:\Delphi\Sinqia.dfm=C:\Users\Abraão Rosa\Documents\Embarcadero\Studio\Projects\Unit3.dfm</Transaction>
+    <Transaction>2024/05/10 01:34:15.000.448,A:\Delphi\Sinqia.pas=C:\Users\Abraão Rosa\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2024/05/10 01:34:23.000.521,A:\Delphi\Unit1.dfm=C:\Users\Abraão Rosa\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/05/10 01:34:23.000.521,A:\Delphi\Unit1.pas=C:\Users\Abraão Rosa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/05/10 01:34:26.000.384,A:\Delphi\Unit2.dfm=C:\Users\Abraão Rosa\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2024/05/10 01:34:26.000.384,A:\Delphi\Unit2.pas=C:\Users\Abraão Rosa\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2024/05/10 01:34:28.000.701,A:\Delphi\Project1.dproj=C:\Users\Abraão Rosa\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/05/10 18:44:15.000.405,=A:\Delphi\Unit4.pas</Transaction>
+  </Transactions>
+</BorlandProject>
