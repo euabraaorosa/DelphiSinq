@@ -5,7 +5,10 @@ Para acessar e testar é necessario baixar o arquivo de backup da pasta BD e imp
 O projeto tem como objetivo criar um sistema de cadastro de clientes para uma empresa. 
 Ele permite o cadastro, edição e exclusão de clientes, bem como a geração de relatórios com base nos dados cadastrados.
 
-A tela de relatório, eu vou precisar de ajuda, nao consegui fazer a parte logica dela funcionar, existe apenas o formulario.
+A tela de relatório do meu projeto é uma parte que ainda precisa de ajustes. 
+No momento, a interface gráfica está pronta, mas a lógica por trás dela ainda não está funcionando corretamente. 
+Embora eu tenha deixado um código comentado com uma tentativa de implementação, o sistema ainda não gera os relatórios como esperado. 
+Preciso de ajuda para refatorar essa parte e fazer com que a funcionalidade de relatórios seja completamente implementada e operacional.
 
 Recursos Principais:
 Cadastro de clientes com os seguintes campos: Código do Cliente, CPF/CNPJ, Nome, Telefone, Endereço, Bairro, Complemento, E-mail, Código da Cidade e CEP.
